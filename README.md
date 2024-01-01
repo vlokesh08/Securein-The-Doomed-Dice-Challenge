@@ -17,3 +17,9 @@ This project explores various aspects of dice combinations, probabilities, and t
 
    ```bash
    git clone https://github.com/vlokesh08/Securein-The-Doomed-Dice-Challenge.git
+
+## Outputs
+
+![Screenshot 2024-01-01 124949](https://github.com/vlokesh08/Securein-The-Doomed-Dice-Challenge/assets/76467286/adca9097-128e-4eac-bcf5-b44c9e997c0a)
+![Screenshot 2024-01-01 125031](https://github.com/vlokesh08/Securein-The-Doomed-Dice-Challenge/assets/76467286/021e70ec-6e4c-4570-badf-9113d3b1c1e9)
+
