@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <style>
+        body {
+            background-color: #52BE80; 
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #2E4053; 
+        }
+
+        p {
+            color: #922B21; 
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #2E4053; 
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #6C3483; 
+        }
+
+        #footer {
+            margin-left: auto;
+            width: 50%;
+            height: 50%;
+            padding: 10px;
+        }
+
+        .container {
+          max-width: 1170px;
+          padding-left: 20px;
+          padding-right: 20px;
+          margin: auto;
+        }
+    </style>
+    <title>Dice Challenge</title>
+</head>
+<body class="container"> 
+    <h1>The Doomed Dice Challenge</h1>
+    <br />
+    <h2>
+        1) Determine the total number of combinations. Show the math along with the
+        code!
+    </h2>
+    <p style="color: #641E16;">Total Combinations: {{ total_combinations }}</p>
+    <br />
+    <h2>
+        2) Compute and present the distribution of all possible combinations
+        achieved when rolling both Die X and Die Y together. Showcase the
+        calculations along with the code! Hint: Utilize a 6 x 6 Matrix.
+    </h2>
+    <h2 style="color: #78281F;">All Possible Dice Combinations</h2>
+    <ul>
+        {% for row in all_combinations %}
+        <li>{{ row }}</li>
+        {% endfor %}
+    </ul>
+    <br />
+    <h2>
+        3) Calculate the Probability of all Possible Sums occurring among the
+        number of combinations from (2). Example: P(Sum = 2) = 1/X as there is
+        only one combination possible to obtain Sum = 2. Die X = Die Y = 1.
+    </h2>
+    <h2 style="color: #78281F;">Original Dice Probabilities</h2>
+    <ul>
+        {% for sum, probability_info in original_probabilities.items() %}
+        <li>Sum: {{ sum }},  Probability: {{ probability_info.probability }}</li>
+        {% endfor %}
+    </ul>
+    <h2 style="color: #78281F;">Modified Dice Probabilities</h2>
+    <ul>
+        {% for sum, probability_info in modified_probabilities.items() %}
+        <li>Sum: {{ sum }},  Probability: {{ probability_info.probability }}</li>
+        {% endfor %}
+    </ul>
+    <div id="footer">
+        <h2>Created by Venkata Lokesh P</h2>
+    </div>
+</body>
+</html>
