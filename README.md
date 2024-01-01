@@ -16,4 +16,4 @@ This project explores various aspects of dice combinations, probabilities, and t
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/dice-challenge.git
+   git clone https://github.com/vlokesh08/Securein-The-Doomed-Dice-Challenge.git
